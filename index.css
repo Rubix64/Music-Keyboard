@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.music{
+    padding:5rem 0rem;
+    background-color:rgb(40, 105, 107);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.keyboard button{
+    border: none;
+    border-radius:12px;
+    padding:0.5rem;
+    margin:0.5rem;
+    font-weight:bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.key-press{
+    color:white;
+    background-color:rgb(6, 35, 88);
+}
+.piano-keys{
+    margin:2.5rem auto;
+    display:flex; 
+}
+.white{
+    --height:30vw;
+    width:calc(var(--height)/4);
+    height: var(--height);
+    background-color:white;
+    border:1px solid rgb(48, 3, 3);
+}
+.black{
+    --height:16vw;
+    width:calc(var(--height)/4);
+    height: var(--height);
+    background-color:rgb(0, 0, 0);
+    margin-left: calc(var(--height)/-8);
+    margin-right: calc(var(--height)/-8);
+    z-index: 1;
+}
+.keym{
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    font-size:20px;
+}
+.keym.white span{
+    margin-bottom: 12px;;
+}
+.keym.black span{
+    color:white;
+    margin-bottom: 12px;;
+}
+.white.active{
+    background-color:rgb(199, 197, 197);
+}
+.black.active{
+    background-color:rgb(44, 44, 44);
+}
